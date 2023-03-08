@@ -23,7 +23,12 @@ const Navbar = () => {
           <div className="flex items-center relative">
             <Switch />
             {currentUser && (
-              <h5 className="mr-10 capitalize">{currentUser?.displayName}</h5>
+              <h5
+                className="mr-10 capitalize dark:text-white
+              text-gray-900"
+              >
+                {currentUser?.displayName}
+              </h5>
             )}
             <div className="dropdown relative">
               <Link
